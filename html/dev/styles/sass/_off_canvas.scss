@@ -1,0 +1,134 @@
+//****off screen plate structure
+$off-canvas-width: 450px !default;
+$off-canvas-width-xs: 90% !default;
+$canvas-breakpoint: $off-canvas-width + $off-canvas-width * (1 - 0.9); 
+$off-canvas-padding: 6%;
+$z-index-max : 9999;
+$text-light-gray : #f2f3f3;
+$text-smoky-gray : #999;
+$overall-transition-duration : 0.4s;
+
+.main-section {
+  width: 100%;
+  position: relative;
+  @include clearfix;
+}
+
+.off-canvas {
+  @include clearfix;
+  position: fixed;
+  top: 0;
+  right: 0 - $off-canvas-width;
+  width: $off-canvas-width;
+  @media screen and (max-width:768px){
+    right: 0 - $off-canvas-width-xs;
+    width: $off-canvas-width-xs;
+  }
+  
+  height: 100%;
+  overflow: auto;
+  background: #f2f2f2;
+  z-index: $z-index-max - 1;
+  @include transition(0.5s, ease-in-out);
+
+  .container-padding {
+    padding-left: $off-canvas-padding;
+    padding-right: $off-canvas-padding;
+  }
+
+  .separator {
+    border-top: 1px solid $text-light-gray;
+  }
+
+  .title {
+    margin-top: 16%;
+    margin-bottom: 8%;
+  }
+}
+
+.canvas-in {
+  right: 0;
+  left: auto;
+}
+
+.canvas-peek {
+  @include transition($overall-transition-duration,ease-in-out);
+  right: 0 - $off-canvas-width * 0.5;
+  @media screen and (max-width:768px) {
+    right: 0 - $off-canvas-width-xs * 0.5;
+  }
+}
+
+.exit-off-canvas {
+  @include clearfix;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: $z-index-max - 2;
+}
+
+.off-canvas {
+  .nav-list {
+    .nav-section {
+      margin: 0;
+      .nav-secondary {
+        >a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        &:first-child {
+          margin-top: 5%;
+        }
+        &:last-child {
+          margin-bottom: 5%;
+        }
+
+        .nav-primary + .nav-secondary {
+          margin-top: 0;
+        }
+      }
+      .nav-last {
+        line-height: 30px;
+        color: $text-smoky-gray;
+        margin: 0;
+        padding-left: $off-canvas-padding * 2;
+        padding-right: $off-canvas-padding;
+        &:hover {
+          color: $text-black;
+          background: $text-white;
+        }
+        >a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .nav-primary {
+      color: $text-smoky-gray;
+      line-height: 4;
+      margin: 0;
+      padding-left: $off-canvas-padding;
+      padding-right: $off-canvas-padding;
+      &:hover {
+        color: $text-black;
+      }
+    }
+
+    .nav-secondary {
+      margin: 0;
+      color: #666;
+      padding-left: $off-canvas-padding * 1.5;
+      padding-right: $off-canvas-padding;
+      line-height: 36px;
+      &:hover {
+        color: $text-black;
+        background: $text-white;
+      }
+    }
+  }
+}

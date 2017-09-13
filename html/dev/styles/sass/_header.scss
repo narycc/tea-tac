@@ -1,0 +1,13 @@
+$header : 12px;
+
+.container-liuxian{
+	header{
+		width:100%;height:60px;position: relative;padding: 0 ; color:#fff;
+		.back{position:absolute;left:20px; top:18px; z-index:1040; padding: 10px; font-size:22px;line-height:1;color:#fff;}
+		.menu{position: absolute; right: 20px; top:18px;z-index:1050;padding:10px;color:#fff;}
+		.title{font-size:18px;position: absolute;width: 100%;top: 28px;}
+		.glyphicon-list{font-size:20px;}
+		.dot{display:inline-block;position:absolute;width:8px;height:8px;background-color:$text-white;top: 9px;right: 7px;border-radius: 50%;}
+	}
+
+}

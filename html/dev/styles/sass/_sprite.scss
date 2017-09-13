@@ -1,0 +1,72 @@
+@import "compass/css3";
+
+[class^="i-"] {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 300px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+button[class^="i-"] {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+@mixin sprites-generator ($image-path,$retina-image-path,$prefix){
+  $map: sprite-map($image-path, $spacing: 10px);
+  $map-retina: sprite-map($retina-image-path, $spacing: 20px);
+  $map-url: sprite-url($map);
+  $map-url-retina: sprite-url($map-retina);
+
+  @each $name in sprite-names($map) {
+    $sprite-name: $name;
+    $is2x: str-index($name,'@2x');
+    @if($is2x){
+      $sprite-name: str-slice($name,0,$is2x);
+    }
+    $sprite-name: $name;
+    $hover-start: str-index($sprite-name,hover);
+    $has-hover: $hover-start != null;
+    @if($has-hover){
+      $root-name: str-slice($sprite-name,0,$hover-start - 2);
+      .#{$prefix}-#{$root-name}:hover{
+        background-position: sprite-position($map, $name);
+      }
+    }@else {
+      .#{$prefix}-#{$name} {
+        @include inline-block;
+        height: image-height(sprite-file($map, $name));
+        width: image-width(sprite-file($map, $name));
+        background-position: sprite-position($map, $name);
+        @include background-size(image-width(sprite-path($map)) auto);
+        background-image: $map-url;
+        // background-image: image-set($map-url 1x,$map-url-retina 2x);
+        // background-image: -webkit-image-set($map-url 1x,$map-url-retina 2x);
+        // background-image: -moz-image-set($map-url 1x,$map-url-retina 2x);
+        // background-image: -o-image-set($map-url 1x,$map-url-retina 2x);
+        // background-image: -ms-image-set($map-url 1x,$map-url-retina 2x);
+      }
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    @each $name in sprite-names($map) {
+      $sprite-name: $name;
+      $hover-start: str-index($sprite-name,hover);
+      $has-no-hover: $hover-start == null;
+      @if($has-no-hover){
+        .#{$prefix}-#{$name} {
+          background-image: $map-url-retina;
+        }
+      }
+    }
+  }
+}
+
+@include sprites-generator($image-path:"sprite/i/*.png",$retina-image-path:"sprite_2x/i/*.png",$prefix:'i');
+
+

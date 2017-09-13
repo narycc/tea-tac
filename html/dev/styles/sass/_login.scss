@@ -1,0 +1,150 @@
+.liuxian-page-login{
+	width:100%;height:100vh;min-height:480px;font-size: 16px;background-size:cover; position: relative;
+
+	.fakeRadio .fakeRadioBtn{border:2px solid #fff;}
+	.b-logo{
+		margin-top:percentage(30 / 420);
+		img{width:41%;max-width:250px;}
+	}
+
+	.form-group{margin-bottom:10px;}
+	.form-login{width:100%;max-width:480px; margin:60px auto 0;}
+	.fields_type{margin-bottom:20px;}
+	@include viewport-lg{
+		min-height: 768px;
+	}
+
+	@include viewport-md{
+		min-height: 640px;
+	}
+
+	@include viewport-sm{
+		min-height: 580px;
+		.b-logo{margin-top: 40px;}
+		.b-content{
+			position: absolute;top: 16%; left:0; padding: 0 20px;  margin: auto;width: 100%;z-index: 10;text-align: center;
+  		@include transform(translate(0, -16%));
+		}
+
+	}
+
+	@include viewport-xs{
+		min-height: auto;
+		.b-logo{
+			margin-top: percentage(40/320);
+			img{width:42%;}
+		}
+		.form-login{margin-top:percentage(50/420)}
+		.b-content{
+			position: absolute;top: 18%; left:0; padding: 0 20px;  margin: auto;width: 100%;z-index: 10;text-align: center;
+  		@include transform(translate(0, -20%));
+		}
+
+	}
+
+	
+	.list-inline .fakeRadio{	width:120px; cursor:pointer;}
+	.input-group {
+    width: 100%;
+    .form-control {
+	    display: block;
+	    width: 100%;
+	    height: 48px;
+	    padding: 6px 12px;
+	    color: #fff;
+	    background-color: rgba(255,255,255,.3);
+	    background-image: none;
+	    border-width: 0;
+	    border-radius: 5px;
+	    &.btn-login{background-color:#fff; color:#333;font-size:18px;}
+		}
+
+		.form-control::-moz-placeholder {color: #fff;opacity: 1;text-align:center; }
+		.form-control:-ms-input-placeholder {color: #fff;text-align:center;}
+		.form-control::-webkit-input-placeholder {color: #fff;text-align:center;}
+
+		.field-hint{height:48px;    line-height: 48px;border-radius: 5px;left:0;}
+
+	}
+
+	.liuxian-release{position : absolute; bottom: 16px; left: 0; width : 100%;font-size:14px;margin-bottom:0;}
+
+	
+
+}
+
+.liuxian-page-resetPassword{
+	width:100%;height:100vh;min-height:480px;font-size: 16px; background-color:#f8f8f8; background-size:cover; position: relative;
+
+	.fakeRadio .fakeRadioBtn{border:2px solid #fff;}
+	.b-logo{
+		margin-top:percentage(30 / 420);
+		img{width:41%;max-width:250px;}
+	}
+
+	.form-group{margin-bottom:10px;}
+	.form-login{width:100%;max-width:480px; margin:60px auto 0;}
+	.fields_type{margin-bottom:20px;}
+	@include viewport-lg{
+		min-height: 768px;
+		
+	}
+
+	@include viewport-md{
+		min-height: 640px;
+	}
+
+	@include viewport-sm{
+		min-height: 580px;
+		.b-logo{padding-top: 40px;}
+		.b-content{
+			position: absolute;top: 16%; left:0; padding: 0 20px;  margin: auto;width: 100%;z-index: 10;text-align: center;
+  		@include transform(translate(0, -16%));
+		}
+
+	}
+
+	@include viewport-xs{
+		min-height: auto;
+		.b-logo{
+			padding-top: percentage(40/320);
+			img{width:42%;}
+		}
+		.form-login{margin-top:percentage(50/420)}
+		.b-content{
+			position: absolute;top: 18%; left:0; padding: 0 20px;  margin: auto;width: 100%;z-index: 10;text-align: center;
+  		@include transform(translate(0, -20%));
+		}
+
+	}
+
+	
+	.list-inline .fakeRadio{	width:120px; cursor:pointer;}
+	.input-group {
+    width: 100%;
+    .form-control {
+	    display: block;
+	    width: 100%;
+	    height: 48px;
+	    padding: 6px 12px;
+	    color: #333;
+	    background-image: none;
+	    border-width:1px;
+	    border-style : solid;
+	    border-radius: 5px;
+	    &.btn-login{margin-top:20px; border-width: 0; color:#fff;font-size:18px;}
+		}
+
+		.form-control::-moz-placeholder {color: #999;opacity: 1;text-align:center; }
+		.form-control:-ms-input-placeholder {color: #999;text-align:center;}
+		.form-control::-webkit-input-placeholder {color: #999;text-align:center;}
+
+		.field-hint{height:48px;    line-height: 48px;border-radius: 5px;left:0;}
+
+	}
+
+	.liuxian-release{position : absolute; bottom: 16px; left: 0; width : 100%;font-size:14px;margin-bottom:0;}
+
+	
+
+}

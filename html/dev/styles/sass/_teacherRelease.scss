@@ -1,0 +1,112 @@
+.liuxian-page-teacherRelease{
+
+
+
+	.b-searchZone{
+		position:relative;
+		.form-group{margin:0 auto;border-radius:5px; background-color:rgba(255,255,255,0.8); padding: 10px 20px; width:80%; min-width:300px; color:#616161;}
+		.i-search{font-size: 16px;display: inline-block;vertical-align: middle;}
+		.s-search{display: inline-block;vertical-align:middle; width: 80%; min-width:200px; text-align: center; background-color:transparent; box-shadow:none;border:0; color:#616161;}
+	}
+
+	.b-list{
+		position:relative;border-bottom:1px solid #dcdcdc;padding: 10px 20px; background-color:#f3f3f3;
+		.b-button {
+			padding: 0;
+			&:first-child{
+				border-right: 1px solid;
+			}
+			a{  display: block;
+    			text-align: center;
+    			
+    			margin: 0 10px; color: #666;}
+
+    		&.b-button-selected a{color:$red-primary;}
+		}
+
+		
+		h4{font-weight:300;padding-left:10px;}
+
+		.ul-classes li{
+			display:inline-block;margin: 10px 6px;padding: 8px 15px; border:1px solid #dcdcdc; border-radius:20px;
+			&.checked{background-color:#fff;border-color: $text-red;}
+		}
+
+	}
+
+	.module-selector{
+
+	    position: absolute;
+	    top: 38px;
+	    background: #f3f3f3;
+	    width: 100%;
+	    left: 0;
+	    z-index: 999;
+	    padding: 0px;
+	    height: 0px;overflow:scroll;
+	    transition: height .5s;
+		-moz-transition: height .5s; /* Firefox 4 */
+		-webkit-transition: height .5s; /* Safari 和 Chrome */
+		-o-transition: height .5s; /* Opera */
+
+	    &.hasShown{
+	    	height: 180px;
+			transition: height .5s;
+			-moz-transition: height .5s; /* Firefox 4 */
+			-webkit-transition: height .5s; /* Safari 和 Chrome */
+			-o-transition: height .5s; /* Opera */
+	    }
+	    .selector-content{margin:10px 0;}
+	   
+
+	    .selector-content li a{ color: #333; }
+	    .selector-content li.selected a{color: #b60005;}
+
+	}
+
+	.b-state{padding: 10px 30px;}
+	.b-allStudents{
+		padding: 0 0px 20px;
+		.fakeRadioBtn{background-color:#fff;}
+		.p-notice{
+		    padding: 10px 0 10px 0;
+		    text-align: center;
+		    color: #fff;
+		}
+		.ul-students {
+			.b-state{padding: 0px 30px 10px 30px;}
+			/* li{padding: 10px;} */
+			.b-img{
+				position:relative;border:2px solid $green-primay; border-radius:50%; overflow:hidden;width:60px;height:60px;margin: 0 auto;
+				img{max-width:100%; }
+			}
+			.b-name{text-align:center; margin-top:5px;}
+			li.checked .b-img{border:2px solid $red-primary;}
+			.s-checked{
+				position: absolute;width:58px;height:58px;text-align:center;
+				top: 0;
+				left: 0;
+				background-color: rgba(0,0,0,.5);
+				padding: 20px 8px;
+				border-radius: 50%;
+				display: none;
+
+				.glyphicon-ok:before {
+				    color: $red-primary;
+				}
+			}
+
+			li.checked .s-checked{display:block;}
+		}
+	}
+
+	.b-step{
+		margin-bottom : 40px;
+		.btn{display:inline-block;text-align:center;}
+		.btn-primary{color:#fff; font-size:18px; padding:10px 30px;border-radius:20px;}
+		.btn.disabled{background-color:#999;}
+		
+	}
+
+	
+}

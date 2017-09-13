@@ -1,0 +1,45 @@
+$sass_method : 12px;
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/utilities/sprites";
+@import "compass/css3/background-size";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/filter";
+
+//set resoponsive styles in this way makes responsive codes independent of each other, so you have to write for every viewport
+@mixin viewport-xs {
+  @media screen and (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+@mixin viewport-sm {
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+@mixin viewport-md {
+  @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @content;
+  }
+}
+
+@mixin viewport-lg {
+  @media screen and (min-width: $screen-lg-min){
+    @content;
+  }
+}
+
+@mixin viewport-not-xs {
+  @media screen and (min-width: $screen-sm-min){
+    @content;
+  }
+}
+
+@function getPercentage($num,$design-width){
+  @return ($num/$design-width)*100%;
+}
