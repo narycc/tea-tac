@@ -60,7 +60,7 @@ Special thanks to [Browserstack](http://www.browserstack.com/) for supporting fu
 ## Usage
 As you can see in the example files, you will need to include:
  - [jQuery library](http://jquery.com/). (1.6.0 minimum)
- - The JavaScript file `jquery.fullPage.js` (or its minified version `jquery.fullPage.min.js`)
+ - The JavaScript file `fullPage.js` (or its minified version `jquery.fullPage.min.js`)
  - The css file `jquery.fullPage.css`
 
  **Optionally**, when using `css3:false`, you can add the [jQuery UI library](http://jqueryui.com/) in case you want to use other easing effects apart from the ones included in the jQuery library (`linear` and `swing` ) or the one included by default in fullPage.js (`easeInOutCubic`).
@@ -90,7 +90,7 @@ npm install fullpage.js
 <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript" src="fullPage.js"></script>
 ```
 
 ###Optional use of CDN
@@ -451,7 +451,7 @@ For example:
 
 ```html
 <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript" src="fullPage.js"></script>
 ```
 
 In order to prevent fullpage.js from creating the scrollbar in certain sections or slides use the class `fp-noscroll`. For example: `<div class="section fp-noscroll">`

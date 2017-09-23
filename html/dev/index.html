@@ -14,49 +14,89 @@
     <link rel="apple-touch-icon" href=" "> <!-- TO DO -->
 
     <!-- PUBLIC STYLES: base.css -->
-    <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="/styles/css/base.css?v=123">
     <!-- PUBLIC STYLES END -->
-      <link rel="stylesheet" href="../bower_components/fullpage.js/dist/jquery.fullpage.css">
+      <link rel="stylesheet" href="./styles/css/fullPage.css">
     <!-- EXCLUSIVE STYLES: template.css -->
     
     <!-- EXCLUSIVE STYLES END -->
-      <style>
-          .container-teatac .img img{max-width: 100%;}
-      </style>
   </head>
   <body>
       <div class="container-teatac">
+          <header>
+              <div class="header bg-white">
+                  <div class="clearfix">
+                      <div class="pull-left l-img">
+                          <img src="/images/index/logo.png" alt="">
+                      </div>
+                      <div class="pull-right r-img">
+                          <a href=""><img src="/images/index/menu.png" alt=""></a>
+                      </div>
+                  </div>
+
+              </div>
+          </header>
           <div id="fullpage">
-              <div class="section">
-                  Some section 1
-                  <div class="img">
-                      <img src="./images/index/index-01.jpg" alt="">
+              <div class="section section1">
+
+                  <div class="section1-logo hidden-xs">
+                      <img src="/images/index/screen_pc_logo_lg.png" alt="">
+                  </div>
+                  
+                  <div class="section1-navigation hidden-xs">
+                      <ul class="list-unstyled list-navigation clearfix">
+                          <li class="item">
+                              <a href="">关于我们</a>
+                          </li>
+                          <li class="item">
+                              <a href="">产品展示</a>
+                          </li>
+                          <li class="item">
+                              <a href="">新闻中心</a>
+                          </li>
+                          <li class="item">
+                              <a href="">联系我们</a>
+                          </li>
+                      </ul>
+                      <p class="p-beian">粤ICP备 201708111号   © tea/tac INC. All Rights Reserved.</p>
                   </div>
               </div>
-              <div class="section">
-                  Some section 2
+              <div class="section section2">
                   <div class="img">
-                      <img src="./images/index/index-02.jpg" alt="">
+                      <img src="/images/index/screen_2_pc_img_bg.jpg" alt="">
                   </div>
               </div>
-              <div class="section">
-                  Some section 3
+              <div class="section section3">
                   <div class="img">
-                      <img src="./images/index/index-04.jpg" alt="">
+                      <img src="/images/index/screen_3_pc_img_bg.jpg" alt="">
                   </div>
               </div>
-              <div class="section">
-                  Some section 4
+              <div class="section section4">
                   <div class="img">
-                      <img src="./images/index/index-05.jpg" alt="">
+                      <img src="/images/index/screen_4_pc_img_bg.jpg" alt="">
+                  </div>
+              </div>
+              <div class="section section5">
+                  <div class="img">
+                      <img src="/images/index/screen_5_pc_img_bg.jpg" alt="">
+                  </div>
+              </div>
+              <div class="section section6">
+                  <div class="img">
+                      <img src="/images/index/screen_6_pc_img_bg.jpg" alt="">
+                  </div>
+              </div>
+              <div class="section section7">
+                  <div class="img">
+                      <img src="/images/index/screen_7_pc_img_bg.jpg" alt="">
                   </div>
               </div>
           </div>
       </div>
   </body>
 </html>
-<script type="text/javascript" src="./js/vendor/jquery.js"></script>
-<script src="../bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery.js"></script>
+<script type="text/javascript" src="./js/plugins/fullPage.js"></script>
 <script>
   $(document).ready(function() {
     $('#fullpage').fullpage();

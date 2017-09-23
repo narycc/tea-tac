@@ -1712,7 +1712,7 @@ html {
 
 /* line 27, ../sass/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -6596,7 +6596,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6734,7 +6734,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8965,304 +8965,88 @@ footer .icon {
   margin-bottom: 0;
 }
 
-/* line 6, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-issue .b-block {
-  padding: 25px 0;
-  border-top: 1px solid #dcdcdc;
-  height: 150px;
-  overflow: hidden;
-  margin-bottom: 20px;
+/* line 2, ../sass/_mainpage.scss */
+.container-teatac .img img {
+  width: 100%;
 }
-/* line 9, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-issue .b-block .b-text {
-  padding: 0 0px 0 20px;
+/* line 3, ../sass/_mainpage.scss */
+.container-teatac .header {
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
 }
 /* line 10, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-issue .b-block h3 {
-  font-size: 16px;
-  margin-top: 0;
+.container-teatac .header .l-img, .container-teatac .header .r-img {
+  display: inline-block;
+  vertical-align: bottom;
 }
 /* line 11, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-issue .b-block p {
-  color: #616161;
-  margin-bottom: 0;
+.container-teatac .header .l-img img {
+  width: 160px;
 }
 /* line 12, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-issue .b-block img {
-  max-width: 100%;
+.container-teatac .header .r-img img {
+  width: 24px;
+  margin-top: 6px;
 }
-/* line 17, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-all-round .b-block {
-  background-color: #fff;
+/* line 14, ../sass/_mainpage.scss */
+.container-teatac .section1 {
+  background: url("../../images/index/screen_1_pc_img_bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
 }
-/* line 18, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-all-round h3 {
-  text-align: center;
-  margin: 0;
-  font-size: 18px;
-  height: 50px;
-  line-height: 50px;
-  background-color: #f8f8f8;
+@media screen and (max-width: 767px) {
+  /* line 14, ../sass/_mainpage.scss */
+  .container-teatac .section1 {
+    background: url("../../images/index/screen_1_m_img_bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+  }
 }
-/* line 20, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-all-round .dimensions {
-  height: 100px;
-  background-color: #fff;
-  padding: 20px 0;
-  text-align: center;
+/* line 22, ../sass/_mainpage.scss */
+.container-teatac .section1 .section1-logo {
+  position: absolute;
+  margin-left: 20px;
+  bottom: 5%;
+  width: 100%;
 }
-/* line 21, ../sass/_mainpage.scss */
-.liuxian-page-mainpage .b-all-round .chart {
-  background-color: #fff;
-  width: 330px;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-  min-height: 320px;
-}
-
-/* line 32, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block {
-  padding: 10px;
-  margin: 0;
-  border-top: 1px solid #dcdcdc;
-  color: #616161;
+/* line 27, ../sass/_mainpage.scss */
+.container-teatac .section1 .section1-logo img {
+  width: 20%;
+  max-width: 420px;
+  min-width: 200px;
 }
 /* line 34, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .b-text {
-  padding: 0 0px 0 10px;
-}
-/* line 35, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block img {
-  max-width: 100%;
-}
-/* line 36, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block p {
-  margin-bottom: 5px;
-}
-/* line 37, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .b-video {
-  margin: 10px 0;
-  padding-right: 12px;
-  width: 100%;
-  overflow: hidden;
+.container-teatac .section1 .section1-navigation {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
 }
 /* line 38, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .b-center {
-  padding: 0;
-  text-align: center;
+.container-teatac .section1 .section1-navigation .list-navigation {
+  text-align: right;
 }
-/* line 39, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .a-img {
+/* line 41, ../sass/_mainpage.scss */
+.container-teatac .section1 .section1-navigation .item {
   display: inline-block;
-  text-align: center;
-  max-height: 74px;
-  overflow: hidden;
-}
-/* line 40, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images {
-  margin: 10px 0;
-}
-/* line 42, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li {
-  width: calc( (100% - 20px)/3);
-  float: left;
-  display: inline-block;
-}
-/* line 43, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+1) {
-  margin-bottom: 5px;
-  margin-right: 5px;
-}
-/* line 44, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+2) {
-  margin-bottom: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-/* line 45, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+3) {
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-/* line 46, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+4) {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  margin-right: 5px;
-}
-/* line 47, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+5) {
-  margin: 5px;
-}
-/* line 48, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+6) {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-/* line 49, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+7) {
-  margin-top: 5px;
-  margin-right: 5px;
+  width: 36px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  float: right;
 }
 /* line 50, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+8) {
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-/* line 51, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images li:nth-child(9n+0) {
-  margin-left: 5px;
-  margin-top: 5px;
+.container-teatac .section1 .section1-navigation .item a {
+  padding: 12px 9px;
+  display: inline-block;
+  color: #fff;
 }
 /* line 54, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images:before, .liuxian-page-refurbish .b-issue .b-block .p-images:after {
-  content: " ";
-  display: table;
-}
-/* line 59, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-images:after {
-  clear: both;
-}
-/* line 64, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-name {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-/* line 65, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-group {
+.container-teatac .section1 .section1-navigation .p-beian {
+  margin-top: 20px;
   font-size: 12px;
-}
-/* line 66, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-issue .b-block .p-time {
-  color: #ccc;
-  font-size: 12px;
-}
-/* line 70, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round {
-  background-color: #fff;
-  padding: 5px;
-}
-/* line 72, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .b-block {
-  background-color: #f3f3f3;
-  margin-bottom: 5px;
-}
-/* line 73, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round h3 {
-  text-align: left;
-  margin: 0;
-  margin-left: 10px;
-  font-size: 15px;
-  font-weight: normal;
-  height: 38px;
-  line-height: 38px;
-}
-/* line 75, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .b-empty {
-  height: 60px;
-  border: 1px dashed #f4c801;
-  margin-bottom: 10px;
-}
-/* line 76, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .chart {
-  background-color: #fff;
-  width: 330px;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-  min-height: 320px;
-}
-/* line 78, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .b-items:before, .liuxian-page-refurbish .b-all-round .b-items:after {
-  content: " ";
-  display: table;
-}
-/* line 83, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .b-items:after {
-  clear: both;
-}
-/* line 86, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .v-item {
-  width: calc(50% - 20px);
-  float: left;
-  margin-bottom: 0px;
-  margin-top: 10px;
-  margin-left: 10px;
-  text-align: left;
-}
-/* line 87, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .v-item:nth-child(2n+1) {
-  margin-right: 10px;
-}
-/* line 88, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-round .v-item:nth-child(2n+0) {
-  margin-left: 10px;
-}
-/* line 92, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-actions {
-  padding: 5px;
-}
-/* line 94, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-actions ul {
-  background-color: #f3f3f3;
-}
-/* line 95, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-actions li {
-  position: relative;
-  padding: 15px 10px 15px 20px;
-  margin-bottom: 2px;
-  background-color: #fff;
-}
-/* line 97, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-actions li a {
-  color: #616161;
-}
-/* line 100, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-actions li:first-child {
-  border-color: transparent;
-}
-/* line 102, ../sass/_mainpage.scss */
-.liuxian-page-refurbish .b-all-actions .icon {
-  float: right;
-  right: 20px;
-}
-
-/* line 108, ../sass/_mainpage.scss */
-.liuxian-page-studentInfo .h-title {
-  background-color: #f3f3f3;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-/* line 115, ../sass/_mainpage.scss */
-.liuxian-page-studentInfo .b-myimage {
-  position: relative;
-  margin-bottom: 20px;
-}
-/* line 117, ../sass/_mainpage.scss */
-.liuxian-page-studentInfo .b-myimage .b-thumbnail {
-  position: absolute;
-  left: 50%;
-  margin-left: -60px;
-  bottom: -20px;
-  width: 120px;
-  height: 120px;
-  border: 2px solid #fff;
-  overflow: hidden;
-}
-/* line 118, ../sass/_mainpage.scss */
-.liuxian-page-studentInfo .b-myimage .b-thumbnail img {
-  max-width: 100%;
-}
-/* line 122, ../sass/_mainpage.scss */
-.liuxian-page-studentInfo .b-two-columns .s-key {
-  text-align: right;
-  padding-right: 20px;
 }
 
 /* line 5, ../sass/_message.scss */
@@ -9816,15 +9600,15 @@ footer .icon {
     width: 50%;
     margin: 0 auto;
   }
-  /* line 33, ../sass/waiting.scss */
+  /* line 32, ../sass/waiting.scss */
   .container-waiting .section-desc {
     padding: 10% 0;
   }
-  /* line 34, ../sass/waiting.scss */
+  /* line 33, ../sass/waiting.scss */
   .container-waiting .img-ercode {
     width: 86%;
   }
-  /* line 35, ../sass/waiting.scss */
+  /* line 34, ../sass/waiting.scss */
   .container-waiting .footer {
     padding-top: 10%;
   }

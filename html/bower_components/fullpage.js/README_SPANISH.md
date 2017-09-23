@@ -61,7 +61,7 @@ Gracias a [Browserstack](http://www.browserstack.com/) por dar soporte a fullPag
 ## Uso
 Como podéis ver en los ejemplos disponibles, es necesario incluir:
  - [La librería de jQuery](http://jquery.com/). (1.6.0 minimum)
- - El archivo de JavaScript `jquery.fullPage.js` (o su versión minificada `jquery.fullPage.min.js`)
+ - El archivo de JavaScript `fullPage.js` (o su versión minificada `jquery.fullPage.min.js`)
  - El archivio CSS `jquery.fullPage.css` (o su versión minificada `jquery.fullpage.min.css`)
 
 **Opcionalmente**, cuando se usa la opcion `css3:false`, puedes anadir la libreríóa de [jQuery UI](http://jqueryui.com/) en caso de que quiera susar otro efecto "easing" en lugar de los que están incluidos en la libreria de jQuery por defecto (`linear` y `swing`) o el includo en fullPage.js por defecto (`easeInOutCubic`).
@@ -91,7 +91,7 @@ npm install fullpage.js
 <!-- Esta linea es opcional y sólamente es necesaria en caso de usar la opcion `scrollOverflow:true`. -->
 <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript" src="fullPage.js"></script>
 ```
 
 ###Uso opcional de un CDN
@@ -444,7 +444,7 @@ Cuando se usa `true` esta opción requiere del uso de la librería externa [`scr
 
 ```html
 <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript" src="fullPage.js"></script>
 ```
 
 Para evitar que fullPage.js crea la barra de desplazamiento en ciertas secciones o diapositivas, haz uso de la clase ` fp-noscroll`. Por ejemplo: `<div class="section fp-noscroll">`
