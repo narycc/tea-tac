@@ -1,9 +1,13 @@
 <!doctype html>
-<!--[if lt IE 7]>    <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>     <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>     <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-  <head>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title> <!-- TO DO -->
@@ -14,91 +18,351 @@
     <link rel="apple-touch-icon" href=" "> <!-- TO DO -->
 
     <!-- PUBLIC STYLES: base.css -->
-    <link rel="stylesheet" href="/styles/css/base.css?v=123">
+
     <!-- PUBLIC STYLES END -->
-      <link rel="stylesheet" href="./styles/css/fullPage.css">
+    <link rel="stylesheet" href="./styles/css/fullPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- EXCLUSIVE STYLES: template.css -->
-    
+    <link rel="stylesheet" href="./styles/css/base.css?v=20170921">
+
     <!-- EXCLUSIVE STYLES END -->
-  </head>
-  <body>
-      <div class="container-teatac">
-          <header>
-              <div class="header bg-white">
-                  <div class="clearfix">
-                      <div class="pull-left l-img">
-                          <img src="/images/index/logo.png" alt="">
-                      </div>
-                      <div class="pull-right r-img">
-                          <a href=""><img src="/images/index/menu.png" alt=""></a>
-                      </div>
-                  </div>
+</head>
+<body>
+<div class="container-teatac">
+    <header>
+        <div class="header bg-white">
+            <div class="clearfix">
+                <div class="pull-left l-img">
+                    <img src="/images/index/logo.png" alt="">
+                </div>
+                <div class="pull-right r-img js-tea-menu">
+                    <a href="javascript:void(0);"><img src="/images/index/menu.png" alt=""></a>
+                </div>
+            </div>
 
-              </div>
-          </header>
-          <div id="fullpage">
-              <div class="section section1">
+        </div>
+    </header>
+    <div id="fullpage">
 
-                  <div class="section1-logo hidden-xs">
-                      <img src="/images/index/screen_pc_logo_lg.png" alt="">
-                  </div>
-                  
-                  <div class="section1-navigation hidden-xs">
-                      <ul class="list-unstyled list-navigation clearfix">
-                          <li class="item">
-                              <a href="">关于我们</a>
-                          </li>
-                          <li class="item">
-                              <a href="">产品展示</a>
-                          </li>
-                          <li class="item">
-                              <a href="">新闻中心</a>
-                          </li>
-                          <li class="item">
-                              <a href="">联系我们</a>
-                          </li>
-                      </ul>
-                      <p class="p-beian">粤ICP备 201708111号   © tea/tac INC. All Rights Reserved.</p>
-                  </div>
-              </div>
-              <div class="section section2">
-                  <div class="img">
-                      <img src="/images/index/screen_2_pc_img_bg.jpg" alt="">
-                  </div>
-              </div>
-              <div class="section section3">
-                  <div class="img">
-                      <img src="/images/index/screen_3_pc_img_bg.jpg" alt="">
-                  </div>
-              </div>
-              <div class="section section4">
-                  <div class="img">
-                      <img src="/images/index/screen_4_pc_img_bg.jpg" alt="">
-                  </div>
-              </div>
-              <div class="section section5">
-                  <div class="img">
-                      <img src="/images/index/screen_5_pc_img_bg.jpg" alt="">
-                  </div>
-              </div>
-              <div class="section section6">
-                  <div class="img">
-                      <img src="/images/index/screen_6_pc_img_bg.jpg" alt="">
-                  </div>
-              </div>
-              <div class="section section7">
-                  <div class="img">
-                      <img src="/images/index/screen_7_pc_img_bg.jpg" alt="">
-                  </div>
-              </div>
-          </div>
-      </div>
-  </body>
+        <div class="section section1">
+
+            <div class="section1-logo hidden-xs">
+                <img src="/images/index/screen_pc_logo_lg.png" alt="">
+            </div>
+
+            <div class="section1-navigation hidden-xs">
+                <ul class="list-unstyled list-navigation clearfix">
+                    <li class="item">
+                        <a href="#secondPage">关于我们</a>
+                    </li>
+                    <li class="item">
+                        <a href="/products/list.html">产品展示</a>
+                    </li>
+                    <li class="item">
+                        <a href="#fourthPage">新闻中心</a>
+                    </li>
+                    <li class="item">
+                        <a href="#fifthPage">联系我们</a>
+                    </li>
+                </ul>
+                <p class="p-beian">粤ICP备 201708111号 © tea/tac INC. All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="section section2">
+            
+            <div class="bg_m"></div>
+            <div class="desc-right hide">
+                <div class="img">
+                    <img src="/images/index/logo.png" alt="">
+                </div>
+                <p class="p1 text-green">探茶是一家</p>
+
+                <div class="p2 ">
+                    <p><span class="text-border-green">为年轻社区提供</span></p>
+                    <p><span class="text-border-green">舒适休闲社交空间的</span></p>
+                    <p><span class="text-border-green">新式生活茶馆</span></p>
+                </div>
+
+                <div class="img cat">
+                    <img src="/images/index/screen_2_pc_cat.png" alt="">
+                </div>
+
+
+                <div class="p3">
+                    <div class="text-green">快速拓展及占领市场提供坚实基础</div>
+                    <p class="text-tiny">Provide a solid foundation for the rapid expansion and occupation of the
+                        market</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section3">
+
+            <div class="bg_m"></div>
+            <div class="desc">
+                <div class="row">
+                    <div class="desc1 hide">
+                        <p class="img">
+                            <img src="/images/index/screen_3_left_title.png" alt="">
+                        </p>
+                        <h4>“茶”即生活</h4>
+                        <div class="p-content">
+                            <p>日本禅茶大师对茶的最高领悟：烧水点茶</p>
+                            <p>探茶探寻的就是在茶与生活的结合之道， </p>
+                            <p>让生活回归本真，</p>
+                        </div>
+                        <h4>我们探茶，与您分享</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="desc2 hide">
+                        <p class="img">
+                            <img src="/images/index/screen_3_right_title.png" alt="">
+                        </p>
+                        <div class="p-content">
+                            <p>为秒针转动“嘀-嗒”的音调，</p>
+                            <p> 旨意实在探茶给你带来的是：</p>
+                        </div>
+                        <h4>生活中分分秒秒</h4>
+                        <h4>真是愉悦的感受</h4>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="section section4">
+            <div class="bg_m"></div>
+            <div class="desc hide">
+                <div class="img logo">
+                    <img src="/images/index/logo.png" alt="">
+                </div>
+                <div class="p-content">
+                    <p class="space">是一家 <span class="bold">为轻年社区提供：</span></p>
+                    <div>高价值中式抹茶、精品原叶茶饮，</div>
+                    <div>及舒适的社交休闲新式休闲茶馆。</div>
+                    <div>搭配精美烘焙的茶食，</div>
+                    <div>探茶重新定义茶馆，</div>
+                    <div> 在你身边的惬意空间，</div>
+                    <div>让忙碌工作之余也能畅享自在生活。</div>
+                </div>
+
+                <div class="img cat hidden-xs">
+                    <img src="/images/index/screen_4_cat.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section section5">
+            <div class="desc hide">
+                <div class="row">
+                    <div class="col col-sm-6">
+                        <div class="v-head">
+                            使命
+                        </div>
+                        <div class="v-desc">
+                            <div>探索中国新式茶饮的新价值，</div>
+                            <div>为顾客创造最愉悦的茶饮体验。</div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6">
+                        <div class="v-head">
+                            愿景
+                        </div>
+                        <div class="v-desc">
+                            <div>为员工提供最优的福利，</div>
+                            <div>最好的学习机会，</div>
+                            <div>最多的发展机会。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section6">
+
+            <div class="section-desc text-center">
+                <h2>竞争优势</h2>
+
+                <ul class="list-unstyled row hide">
+                    <li class="col col-sm-2">
+                        <div class="li-content">
+                            <div class="icon icon1"></div>
+                            <div class="text">
+                                <div class="h4">茶饮 + 烘焙</div>
+                                <div class="desc">
+                                    在双品类下产品深度优化，达到更完美的结合。
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="col col-sm-2">
+                        <div class="li-content">
+                            <div class="icon icon2"></div>
+                            <div class="text">
+                                <div class="h4">品类聚焦</div>
+                                <div class="desc">
+                                    专注抹茶，原叶茶的饮品，结合高品质的烘焙茶点。
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="col col-sm-2">
+                        <div class="li-content">
+                            <div class="icon icon3"></div>
+                            <div class="text">
+                                <div class="h4">
+                                    <div class="item">完善的QSCV体系</div>
+                                </div>
+                                <div class="desc">建立了完善的规模化的连锁管理体系。</div>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="col col-sm-2">
+                        <div class="li-content">
+                            <div class="icon icon4"></div>
+                            <div class="text">
+                                <div class="h4">
+                                    <div class="item">设计与空间</div>
+                                </div>
+                                <div class="desc">
+                                    有顶尖的设计团队在顾客可感知层面达到最人性化的消费体验。
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="col col-sm-2">
+                        <div class="li-content">
+                            <div class="icon icon5"></div>
+                            <div class="text">
+                                <div class="h4">专业团队</div>
+                                <div class="desc">
+                                    产品研发、运营管理、市场营销，品牌设计及后端供应链资源均为职业化的。
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="col col-sm-2">
+                        <div class="li-content">
+                            <div class="icon icon6"></div>
+                            <div class="text">
+                                <div class="h4">
+                                    <div class="item">成熟的供应链资源</div>
+                                </div>
+                                <div class="desc">
+                                    基地采购，海外采购，最好的品质，最优的价格。
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section section7">
+            <div class="section-desc">
+                <h2>全方位的品牌价值打造</h2>
+
+                <ul class="list-unstyled row">
+                    <li class="li-content col-xs-6 col-sm-3">
+                        <img src="/images/index/screen_7_1.png" alt="">
+                    </li>
+                    <li class="li-content col-xs-6 col-sm-3">
+                        <img src="/images/index/screen_7_2.png" alt="">
+                    </li>
+                    <li class="li-content col-xs-6 col-sm-3">
+                        <img src="/images/index/screen_7_3.png" alt="">
+                    </li>
+                    <li class="li-content col-xs-6 col-sm-3">
+                        <img src="/images/index/screen_7_4.png" alt="">
+                    </li>
+                </ul>
+
+                <div class="bottom">
+                    <h2>探茶是一个真正关心我们生活的品牌</h2>
+                </div>
+                
+                <div class="bottom-logo hidden-xs">
+                    <img src="/images/index/screen_7_logo.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal modal-tea js-tea-modal" style="display: none;" tabindex="-1" role="dialog">
+
+
+            <div class="modal-close js-modal-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></div>
+
+
+        <div class="modal-body">
+            <ul class="list-unstyled">
+                <li class="item"><a href="#firstPage">关于我们</a></li>
+                <li class="item"><a href="/products/list.html">产品展示</a></li>
+                <li class="item"><a href="#thirdPage">新闻中心</a></li>
+                <li class="item"><a href="#fourthPage">团队介绍</a></li>
+                <li class="item"><a href="#fifthPage">门店展示</a></li>
+                <li class="item"><a href="#sixthPage">联系我们</a></li>
+            </ul>
+        </div>
+    </div><!-- /.modal -->
+
+</div>
+</body>
 </html>
 <script type="text/javascript" src="/js/vendor/jquery.js"></script>
 <script type="text/javascript" src="./js/plugins/fullPage.js"></script>
 <script>
-  $(document).ready(function() {
-    $('#fullpage').fullpage();
+  $(document).ready(function () {
+    $('#fullpage').fullpage({
+      navigation:'true',
+      anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fifthPage','sixthPage','seventhPage'],
+      afterLoad: function(anchorLink,index){
+        if(index===1){
+
+        }else if(index===2){
+          $('.section2 .desc-right').removeClass('hide').addClass('animated slideInRight');
+        }else if(index===3){
+          $('.section3 .desc1').removeClass('hide').addClass('animated fadeInDown');
+          $('.section3 .desc2').removeClass('hide').addClass('animated fadeInUp');
+        }else if(index===4){
+          $('.section4 .desc').removeClass('hide').addClass('animated slideInRight');
+        }else if(index===5){
+          $('.section5 .desc').removeClass('hide').addClass('animated slideInDown');
+        }else if(index===6){
+          $('.section6 .row').removeClass('hide').addClass('animated fadeInRight');
+        }
+      },
+      onLeave:function (index,direction) {
+        if(index===1){
+          $('.section1 p').removeClass('animated bounce');
+        }
+      }
+    });
+
+
+
+    $('.js-tea-menu').on('click',function(){
+      $('.js-tea-modal').slideDown();
+
+    });
+
+
+    $('.js-modal-close').on('click',function () {
+      $('.js-tea-modal').slideUp();
+    });
+
+    $('.js-tea-modal').on('click','a',function(){
+      $('.js-tea-modal').slideUp();
+    })
   });
 </script>

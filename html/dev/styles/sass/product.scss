@@ -1,0 +1,62 @@
+// @include 基本上是使用compass 的方法；
+
+.container-products {
+  background-color: #f2f3b0;
+
+
+
+}
+
+.products-list {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  @include display-flex;
+  @include flex-direction(row);
+  @include justify-content(center);
+  flex-wrap: wrap;
+
+  .b-img {
+    img{max-width: 100%;}
+    padding: 10px;
+  }
+
+  li {
+    border: 1px solid;
+    @include border-radius(5px);
+    @include flex-grow(1);
+    width: 30%;
+    padding: 50px 0 80px;
+    text-align: center;
+    position: relative;
+    margin: 2px;
+  }
+
+
+
+  .b-title {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    .title-cn{font-size: 18px;}
+    .title-en{font-size: 16px;}
+    p{margin-bottom: 0;}
+  }
+
+  @media screen and (max-width: 960px){
+
+    .b-img{
+      img{max-width:none; max-height: 180px;}
+    }
+    li{width: 48%; padding-top: 30px}
+
+    .b-title{
+      .title-cn{font-size: 16px;}
+      .title-en{font-size: 14px;}
+    }
+  }
+
+}

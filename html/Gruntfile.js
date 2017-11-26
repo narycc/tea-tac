@@ -109,7 +109,7 @@ module.exports = function (grunt) {
         files: [
           '<%= config.dev %>/{,*/}*.html',
           '<%= config.dev %>/styles/{,*/}*.css',
-          '<%= config.dev %>/images/{,*/}*'
+          '<%= config.dev %>/products/{,*/}*'
         ]
       },
       scripts: {
@@ -266,7 +266,7 @@ module.exports = function (grunt) {
         src: [
           '<%= config.dist %>/js/{,*/}*.js',
           '<%= config.dist %>/styles/{,*/}*.css',
-          '<%= config.dist %>/images/{,*/,**/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= config.dist %>/products/{,*/,**/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= config.dist %>/styles/fonts/{,*/}*.*',
           '<%= config.dist %>/*.{ico,png}'
         ]
@@ -278,17 +278,17 @@ module.exports = function (grunt) {
       mid: {
         files: [{
           expand: true,
-          cwd: '<%= config.dev %>/images',
+          cwd: '<%= config.dev %>/products',
           src: '{,*/,**/}*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.mid %>/images'
+          dest: '<%= config.mid %>/products'
         }]
       },
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= config.dev %>/images',
+          cwd: '<%= config.dev %>/products',
           src: '{,*/,**/}*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.dist %>/images'
+          dest: '<%= config.dist %>/products'
         }]
       }
     },
@@ -297,17 +297,17 @@ module.exports = function (grunt) {
       mid: {
         files: [{
           expand: true,
-          cwd: '<%= config.dev %>/images',
+          cwd: '<%= config.dev %>/products',
           src: '{,*/}*.svg',
-          dest: '<%= config.mid %>/images'
+          dest: '<%= config.mid %>/products'
         }]
       },
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= config.dev %>/images',
+          cwd: '<%= config.dev %>/products',
           src: '{,*/}*.svg',
-          dest: '<%= config.dist %>/images'
+          dest: '<%= config.dist %>/products'
         }]
       }
     },

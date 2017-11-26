@@ -692,7 +692,7 @@
                 if(document.readyState === 'complete'){
                     createScrollBarHandler();
                 }
-                //after DOM and images are loaded
+                //after DOM and products are loaded
                 $window.on('load', createScrollBarHandler);
             }else{
                 afterRenderActions();

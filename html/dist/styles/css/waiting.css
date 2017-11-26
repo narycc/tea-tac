@@ -1,0 +1,56 @@
+/* line 2, ../sass/waiting.scss */
+.container-waiting .body-waiting {
+  padding-top: 60px;
+  padding-bottom: 8%;
+  background-color: #f1f3b0;
+}
+/* line 7, ../sass/waiting.scss */
+.container-waiting .header-logo {
+  width: 20%;
+  margin: 0 auto;
+}
+/* line 9, ../sass/waiting.scss */
+.container-waiting .img img {
+  max-width: 100%;
+  text-align: center;
+}
+/* line 14, ../sass/waiting.scss */
+.container-waiting .section-desc {
+  padding: 1% 0;
+}
+/* line 15, ../sass/waiting.scss */
+.container-waiting .img-ercode {
+  width: 50%;
+  margin: 0 auto;
+}
+/* line 17, ../sass/waiting.scss */
+.container-waiting .footer {
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 5%;
+}
+@media screen and (max-width: 768px) {
+  /* line 25, ../sass/waiting.scss */
+  .container-waiting .body-waiting {
+    padding-top: 60px;
+    padding-bottom: 8%;
+  }
+  /* line 29, ../sass/waiting.scss */
+  .container-waiting .header-logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* line 32, ../sass/waiting.scss */
+  .container-waiting .section-desc {
+    padding: 10% 0;
+  }
+  /* line 33, ../sass/waiting.scss */
+  .container-waiting .img-ercode {
+    width: 86%;
+  }
+  /* line 34, ../sass/waiting.scss */
+  .container-waiting .footer {
+    padding-top: 10%;
+  }
+}
